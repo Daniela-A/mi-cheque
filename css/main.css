@@ -146,6 +146,7 @@ body {
   font-weight: normal;
   line-height: 48px;
   margin: 0 auto;
+  margin-bottom: 48px;
   max-width: 648px;
   text-align: center;
 }
@@ -244,7 +245,6 @@ body {
   margin: -16px;
   margin-top: 16px;
   padding: 12px 16px;
-
 }
 
 .Panel__Link {
@@ -263,6 +263,17 @@ body {
   gap: 16px;
   grid: auto-flow / repeat(5, 182px);
   margin: auto;
+  margin-top: 64px;
+}
+
+.Team__Description {
+  margin: 0 auto;
+  max-width: 648px;
+  text-align: center;
+}
+
+.Team__Description + .Team__Description {
+  margin-top: 24px;
 }
 
 .TeamMember {
@@ -276,11 +287,19 @@ body {
 }
 
 .TeamMember__Name {
-
+  color: #292929;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .TeamMember__Description {
-
+  color: #84775d;
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
 }
 
 .Brands {
@@ -293,6 +312,23 @@ body {
   min-height: 180px;
 }
 
+.Steps {
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(3, 1fr);
+  margin-bottom: 48px;
+}
+
+.Step__Logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.Step__Description {
+  margin: 0;
+  text-align: center;
+}
 
 
  /* ==========================================================================

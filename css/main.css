@@ -168,6 +168,25 @@ hr {
   padding: 0;
 }
 
+.Link {
+  color: #a7c110;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Link:hover {
+  color: #8b9f22;
+}
+
+.Link--Small {
+  font-size: 16px;
+}
+
+.Link--Light {
+  font-weight: normal;
+}
+
 .Header {
   background-color: #ffffffe6;
   padding: 12px 0;
@@ -197,12 +216,8 @@ hr {
 
 .Header__Link {
   color: #463e39;
+  font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
-}
-
-.Header__Link:hover {
-  color: #8b9f22;
 }
 
 .Button {
@@ -270,14 +285,8 @@ hr {
 }
 
 .Panel__Link {
-  color: #a7c110;
   font-size: 12px;
   font-weight: 500;
-  text-decoration: none;
-}
-
-.Panel__Link:hover {
-  color: #8b9f22;
 }
 
 .Team {
@@ -385,25 +394,6 @@ hr {
   flex: 1;
   margin: 0;
   margin-bottom: 24px;
-}
-
-.Link {
-  color: #a7c110;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.Link:hover {
-  color: #8b9f22;
-}
-
-.Link--Small {
-  font-size: 16px;
-}
-
-.Link--Light {
-  font-weight: normal;
 }
 
 .Help {

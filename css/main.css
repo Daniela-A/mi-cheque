@@ -258,6 +258,13 @@ body {
   color: #8b9f22;
 }
 
+.Team {
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(5, 182px);
+  margin: auto;
+}
+
 .TeamMember {
 
 }
@@ -276,6 +283,15 @@ body {
 
 }
 
+.Brands {
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(4, 1fr);
+}
+
+.Brands > .Panel {
+  min-height: 180px;
+}
 
 
 

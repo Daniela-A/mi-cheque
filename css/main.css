@@ -111,6 +111,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr {
+  margin: 16px 0;
+}
+
 .Section {
   padding: 64px 0;
 }
@@ -235,6 +239,20 @@ body {
   margin: -32px;
   margin-top: 32px;
   padding: 16px 32px;
+}
+
+.Panel--Dark {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+.Panel--Dark > p {
+  color: #b99d64;
+  margin: 0;
+}
+
+.Panel--Dark > hr {
+  border-color: #c1b8a580;
 }
 
 .Panel--Centered {
@@ -380,7 +398,30 @@ body {
   color: #8b9f22;
 }
 
+.Link--Small {
+  font-size: 16px;
+}
 
+.Link--Light {
+  font-weight: normal;
+}
+
+.Help {
+  margin-top: -80px;
+  max-width: 400px;
+}
+
+.Help__Title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.Help__Title--Large {
+  font-size: 24px;
+  line-height: 32px;
+}
 
  /* ==========================================================================
    Helper classes

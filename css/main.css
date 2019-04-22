@@ -289,6 +289,15 @@ hr {
   font-weight: 500;
 }
 
+#Hero {
+  background-image: url(../img/andrew-neel-218073-unsplash@2x.jpg);
+  background-size: cover;
+}
+
+.Hero__Title {
+
+}
+
 .Team {
   display: grid;
   gap: 16px;
@@ -347,18 +356,49 @@ hr {
   display: grid;
   gap: 16px;
   grid: auto-flow / repeat(3, 1fr);
+}
+
+.Step__Title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #292929;
+}
+
+.Step__Description {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #292929;
+}
+
+#HowTo {
+  background-image: url(../img/andrew-neel-218073-unsplash-copy@2x.jpg);
+  background-size: cover;
+}
+
+.HowTo__Container {
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(3, 1fr);
   margin-bottom: 48px;
 }
 
-.Step__Logo {
+.HowTo__Logo {
   display: block;
   margin: auto;
   margin-bottom: 24px;
 }
 
-.Step__Description {
+.HowTo__Description {
   margin: 0;
   text-align: center;
+}
+
+#Articles {
+  background-image: url(../img/andrew-neel-218073-unsplash-copy-2@2x.jpg);
+  background-size: cover;
 }
 
 .Articles {

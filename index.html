@@ -52,9 +52,9 @@
   </header>
 
   <main>
-    <section class="Section">
+    <section id="Hero" class="Section">
       <div class="Container">
-        <h1>
+        <h1 class="Hero__Title">
           Cobrá tu cheque deferido ahora
         </h1>
       </div>
@@ -66,8 +66,38 @@
           Cómo funciona
         </span>
         <h1 class="Section__Title">
-          Obtene la plata de tu cheque rapido y fácil en solo <strong>3 pasos</strong>
+          Obtené la plata de tu cheque rápido y fácil en solo <strong>3 pasos</strong>
         </h1>
+        <ul class="Unstyled Steps">
+          <li>
+            <h2 class="Step__Title">
+              Subí tu cheque
+            </h2>
+            <p class="Step__Description">
+              Pone una foto de tu cheque y nosotros estudiamos el librador
+              del cheque.
+            </p>
+
+          </li>
+          <li>
+            <h2 class="Step__Title">
+              Vendelo
+            </h2>
+            <p class="Step__Description">
+              Nuestros usuarios inversores te van a realizar ofertas. comprar directamente.
+            </p>
+
+          </li>
+          <li>
+            <h2 class="Step__Title">
+              Recibí la plata
+            </h2>
+            <p class="Step__Description">
+              El inversor te va a transferir directo a tu cuenta bancaria.
+            </p>
+
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -76,30 +106,47 @@
       </div>
     </section>
 
-    <section class="Section">
+    <section id="HowTo" class="Section Section--Large">
       <div class="Container">
         <span class="Section__Intro">
           Ganá dinero
         </span>
         <h1 class="Section__Title">
-          ¿Te gustaria invertir?
+          ¿Te gustaría invertir?
         </h1>
-        <ul class="Steps Unstyled">
+        <ul class="HowTo__Container Unstyled">
           <li class="Panel Panel--Large">
-            <img class="Step__Logo" src="https://placekitten.com/72/72" alt="">
-            <p class="Step__Description">
+            <svg class="HowTo__Logo" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+              <g fill="#292929" fill-rule="nonzero" stroke="#292929">
+                <path d="M67 37.2c.9 0 1.3-1.1.7-1.7l-4.8-6.3V14.9c0-.5-.4-1-1-1H47.8C47.3 7.8 42.2 3 36 3c-6.2 0-11.3 4.8-11.8 10.9H10.1c-.5 0-1 .4-1 1v14.3l-4.9 6.4c-.5.6 0 1.6.8 1.6h4.1V65H5c-.5 0-1 .4-1 1 0 .5.4 1 1 1h62c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-4.1V37.2H67zM36 5c5.5 0 9.9 4.4 9.9 9.9s-4.4 9.9-9.9 9.9-9.9-4.4-9.9-9.9S30.5 5 36 5zM11.1 15.9h13.1c.5 6.1 5.6 10.9 11.8 10.9 6.2 0 11.3-4.8 11.8-10.9h13.1v12.7H11.1V15.9zm-.5 14.6h50.8l3.6 4.7H6.9l3.7-4.7zM35 65h-3.4V53.8c0-2.1 1.5-3.8 3.4-4.3V65zm2 0V49.5c2 .4 3.4 2.2 3.4 4.3V65H37zm23.9 0H42.3V53.8c0-3.5-2.8-6.3-6.3-6.3s-6.3 2.8-6.3 6.3V65H11.1V37.2H61V65h-.1z"/>
+                <path d="M21.7 18.8h-6.8c-.5 0-1 .4-1 1v5c0 .5.4 1 1 1h6.8c.5 0 1-.4 1-1v-5c0-.6-.4-1-1-1zm-.9 4.9h-4.9v-3h4.9v3zM57 18.8h-6.8c-.5 0-1 .4-1 1v5c0 .5.4 1 1 1H57c.5 0 1-.4 1-1v-5c0-.6-.4-1-1-1zm-.9 4.9h-4.9v-3h4.9v3zM47.2 61.1h8.9c.5 0 1-.4 1-1V42c0-.5-.4-1-1-1h-8.9c-.5 0-1 .4-1 1v18.2c0 .5.4.9 1 .9zm.9-1.9v-7.1h7v7.1h-7zm7-16.2v7.1h-7V43h7zM15.9 61.1h8.9c.5 0 1-.4 1-1V42c0-.5-.4-1-1-1h-8.9c-.5 0-1 .4-1 1v18.2c0 .5.5.9 1 .9zm1-1.9v-7.1h7v7.1h-7zM23.8 43v7.1h-7V43h7zM36 19c-.9 0-1.6-.7-1.6-1.6 0-.5-.4-1-1-1s-1 .4-1 1c0 1.6 1.1 2.9 2.5 3.4v.7c0 .5.4 1 1 1s1-.4 1-1v-.7c1.5-.4 2.5-1.8 2.5-3.4 0-1.9-1.6-3.5-3.5-3.5-.9 0-1.6-.7-1.6-1.6 0-.9.7-1.6 1.6-1.6.9 0 1.6.7 1.6 1.6 0 .5.4 1 1 1s1-.4 1-1c0-1.6-1.1-2.9-2.5-3.4v-.6c0-.5-.4-1-1-1s-1 .4-1 1V9c-1.5.4-2.5 1.8-2.5 3.4 0 1.9 1.6 3.5 3.5 3.5.9 0 1.6.7 1.6 1.6 0 .8-.7 1.5-1.6 1.5z"/>
+              </g>
+            </svg>
+
+            <p class="HowTo__Description">
               Invertí tu dinero de forma segura sin moverte de tu casa.
             </p>
           </li>
           <li class="Panel Panel--Large">
-            <img class="Step__Logo" src="https://placekitten.com/72/72" alt="">
-            <p class="Step__Description">
+            <svg class="HowTo__Logo" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+              <g fill="#000" fill-rule="nonzero" stroke="#292929">
+               <path d="M36.495 64l-.305-.087c-6.505-1.856-12.315-5.977-16.803-11.917A27.04 27.04 0 0 1 14 35.763V20.578c0-1.093.732-2.048 1.784-2.329A67.234 67.234 0 0 0 35.077 9.44a2.51 2.51 0 0 1 2.843.002 66.37 66.37 0 0 0 13.804 7.042 58.897 58.897 0 0 0 5.52 1.77h.006A2.364 2.364 0 0 1 59 20.54v15.224a27.04 27.04 0 0 1-5.387 16.233c-4.487 5.94-10.301 10.06-16.814 11.917l-.304.087zm.002-52.766a.306.306 0 0 0-.173.055 68.45 68.45 0 0 1-19.97 9.118.173.173 0 0 0-.13.17v15.186a24.792 24.792 0 0 0 4.935 14.884c4.184 5.537 9.342 9.247 15.336 11.03 6.001-1.784 11.163-5.494 15.346-11.03a24.792 24.792 0 0 0 4.935-14.884V20.539a.133.133 0 0 0-.095-.127c-1-.26-3.07-.845-5.731-1.835a68.641 68.641 0 0 1-14.278-7.287.31.31 0 0 0-.175-.056z"/>
+                <path d="M31.398 43.485l-6.079-6.02a1.072 1.072 0 0 1 0-1.527 1.095 1.095 0 0 1 1.541 0l5.793 5.737L46.14 28.316a1.095 1.095 0 0 1 1.54 0 1.072 1.072 0 0 1 0 1.527L33.909 43.485a1.784 1.784 0 0 1-2.51 0z"/>
+              </g>
+            </svg>
+            <p class="HowTo__Description">
               Realizamos un análisis crediticio de los libradores así como verificaciones para asegurar que los cheques son buenos.
             </p>
           </li>
           <li class="Panel Panel--Large">
-            <img class="Step__Logo" src="https://placekitten.com/72/72" alt="">
-            <p class="Step__Description">
+            <svg class="HowTo__Logo" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+              <g fill="#292929" fill-rule="nonzero" stroke="#292929">
+                <path d="M68.193 17.983L41.5 10.657V8.094h-2.2v1.96l-2.2-.604V7h-2.2v2.45l-2.2.603V8.094h-2.2v2.563L3.807 17.983c-.477.13-.807.562-.807 1.055v4.377c0 .604.492 1.094 1.1 1.094h2.2v3.283c0 .605.492 1.095 1.1 1.095h1.1v25.17H6.3c-.608 0-1.1.49-1.1 1.094v3.283H4.1c-.608 0-1.1.49-1.1 1.094v4.378C3 64.51 3.492 65 4.1 65h63.8c.608 0 1.1-.49 1.1-1.094v-4.378c0-.604-.492-1.094-1.1-1.094h-1.1v-3.283c0-.604-.492-1.094-1.1-1.094h-2.2v-25.17h1.1c.608 0 1.1-.49 1.1-1.095V24.51h2.2c.608 0 1.1-.49 1.1-1.094v-4.377c0-.493-.33-.924-.807-1.055zM66.8 60.623v2.188H5.2v-2.188h61.6zm-2.2-4.378v2.189H7.4v-2.189h57.2zm-49.5-22.98v16.414h-4.4V33.264h4.4zm-4.4-2.19v-2.188h4.4v2.188h-4.4zm4.4 20.793v2.189h-4.4v-2.19h4.4zm2.2 2.189v-25.17h6.6v25.17h-6.6zm13.2-20.793V49.68h-4.4V33.264h4.4zm-4.4-2.189v-2.188h4.4v2.188h-4.4zm4.4 20.793v2.189h-4.4v-2.19h4.4zm2.2 2.189v-25.17h6.6v25.17h-6.6zm13.2-20.793V49.68h-4.4V33.264h4.4zm-4.4-2.189v-2.188h4.4v2.188h-4.4zm4.4 20.793v2.189h-4.4v-2.19h4.4zm2.2 2.189v-25.17h6.6v25.17h-6.6zm13.2-20.793V49.68h-4.4V33.264h4.4zm-4.4-2.189v-2.188h4.4v2.188h-4.4zm4.4 20.793v2.189h-4.4v-2.19h4.4zm2.2-25.17h-55V24.51h55v2.19zm3.3-4.377H5.2v-2.45L36 11.419l30.8 8.454v2.449z"/>
+                <path d="M32.7 16.85a3.292 3.292 0 0 0 3.3 3.282c1.823 0 3.3-1.47 3.3-3.283a3.292 3.292 0 0 0-3.3-3.283c-1.823 0-3.3 1.47-3.3 3.283zm4.4 0c0 .603-.492 1.093-1.1 1.093-.608 0-1.1-.49-1.1-1.094 0-.604.492-1.094 1.1-1.094.608 0 1.1.49 1.1 1.094zM28.3 15.755h2.2v2.189h-2.2zM41.5 15.755h2.2v2.189h-2.2z"/>
+              </g>
+            </svg>
+
+            <p class="HowTo__Description">
               Cuidamos tus inversiones. Verificamos cheques y libradores con un sistema integrado con Inforcheck e información del Banco Central.
             </p>
           </li>
@@ -271,14 +318,16 @@
       </div>
     </section>
 
-    <section class="Section">
+    <section id="Articles" class="Section Section--Large">
       <div class="Container">
         <h1 class="Section__Title">
           Noticias y prensa
         </h1>
         <div class="Articles">
           <article class="Article Panel Panel--Large">
-            <img src="https://placekitten.com/80/80" alt="">
+            <img src="img/bitmap.png"
+                 srcset="img/bitmap@2x.png 2x,
+                 img/bitmap@3x.png 3x" alt="El país">
             <h1 class="Article__Title">
               MiCheque, la plataforma que descuenta cheques a mejores tasas que los bancos
             </h1>
@@ -292,7 +341,9 @@
           </article>
 
           <article class="Article Panel Panel--Large">
-            <img src="https://placekitten.com/80/80" alt="">
+            <img src="img/NF.png"
+                 srcset="img/NF@2x.png 2x,
+                 img/NF@3x.png 3x" alt="Neurona Financiera">
             <h1 class="Article__Title">
               Cómo invertir en Micheque.uy
             </h1>

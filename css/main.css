@@ -102,6 +102,7 @@ textarea {
 
 body {
   background-color: #faf8f5;
+  color: #292929;
   font-family: GTWalsheimPro, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -129,8 +130,8 @@ hr {
 }
 
 .Section--Large {
-  padding-bottom: 128px;
-  padding-top: 128px;
+  padding-bottom: 112px;
+  padding-top: 112px;
 }
 
 .Section__Intro {
@@ -177,6 +178,13 @@ hr {
 
 .Link:hover {
   color: #8b9f22;
+}
+
+button.Link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .Link--Small {
@@ -295,7 +303,18 @@ hr {
 }
 
 .Hero__Title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 72px;
+  margin: 0;
+}
 
+.Calculator__Title {
+  color: #84775d;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
 }
 
 .Team {
@@ -353,24 +372,56 @@ hr {
 }
 
 .Steps {
+  counter-reset: step;
   display: grid;
   gap: 16px;
   grid: auto-flow / repeat(3, 1fr);
+  margin-top: 64px;
+}
+
+.Step {
+  counter-increment: step;
+  position: relative;
+}
+
+.Step + .Step::before {
+  border-color: transparent;
+  border-left-color: #c1b8a580;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  content: ' ';
+  display: block;
+  left: -8px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.Step::after {
+  color: #c1b8a580;
+  content: counter(step);
+  font-size: 232px;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .Step__Title {
   font-size: 32px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 8px;
   text-align: center;
-  color: #292929;
 }
 
 .Step__Description {
-  font-size: 16px;
-  line-height: 1.5;
+  margin: 0;
   text-align: center;
-  color: #292929;
 }
 
 #HowTo {

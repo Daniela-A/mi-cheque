@@ -485,6 +485,7 @@ button.Link {
 #Articles {
   background-image: url(../img/andrew-neel-218073-unsplash-copy-2@2x.jpg);
   background-size: cover;
+  padding-bottom: 160px;
 }
 
 .Articles {
@@ -523,7 +524,7 @@ button.Link {
 }
 
 .Help {
-  margin-top: -80px;
+  margin-top: -112px;
   max-width: 400px;
 }
 

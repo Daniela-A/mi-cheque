@@ -504,6 +504,26 @@ button.Link {
   line-height: 32px;
 }
 
+.Statistics {
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(4, 1fr);
+  text-align: center;
+}
+
+.Statistics__Numbers {
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 64px;
+  margin: 8px 0;
+}
+
+.Statistics__Info {
+  color: #c1b8a5;
+  margin: 0;
+}
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -307,6 +307,15 @@ button.Link {
   font-weight: 900;
   line-height: 72px;
   margin: 0;
+  margin-bottom: 8px;
+}
+
+.Hero__Subtitle {
+  color: #84775d;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
 }
 
 .Calculator__Title {

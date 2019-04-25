@@ -118,6 +118,7 @@ hr {
 
 .Section {
   padding: 64px 0;
+  position: relative;
 }
 
 .Section--Dark {
@@ -300,6 +301,8 @@ button.Link {
 #Hero {
   background-image: url(../img/andrew-neel-218073-unsplash@2x.jpg);
   background-size: cover;
+  min-height: 640px;
+  padding-top: 192px;
 }
 
 .Hero__Title {
@@ -308,6 +311,7 @@ button.Link {
   line-height: 72px;
   margin: 0;
   margin-bottom: 8px;
+  max-width: 640px;
 }
 
 .Hero__Subtitle {
@@ -316,6 +320,15 @@ button.Link {
   font-weight: 500;
   line-height: 32px;
   margin: 0;
+}
+
+.Calculator {
+  bottom: 0;
+  position: absolute;
+  transform: translateY(50%);
+  max-width: 980px;
+  width: 100%;
+  z-index: 1;
 }
 
 .Calculator__Title {

@@ -197,13 +197,26 @@ button.Link {
 }
 
 .Header {
-  background-color: #ffffffe6;
   padding: 12px 0;
   position: fixed;
+  top: 0;
+  transition: background-color ease-in-out .25s;
   width: 100%;
+  will-change: background-color;
+  z-index: 2;
+}
+
+.Header--Active {
+  background-color: #ffffffe6;
 }
 
 .Header__Logo__Image {
+  height: 60px;
+  transition: width ease-in-out .25s, height ease-in-out .25s;
+  will-change: width, height;
+}
+
+.Header--Active .Header__Logo__Image {
   height: 36px;
 }
 

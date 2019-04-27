@@ -365,10 +365,30 @@ button.Link {
 
 .Team {
   display: grid;
-  gap: 16px;
-  grid: auto-flow / repeat(5, 182px);
+  gap: 32px;
+  grid: auto-flow / repeat(1, 182px);
   margin: auto;
   margin-top: 64px;
+}
+
+@media (min-width: 576px) {
+  .Team {
+    grid: auto-flow / repeat(2, 182px);
+  }
+}
+
+@media (min-width: 768px) {
+  .Team {
+    gap: 24px;
+    grid: auto-flow / repeat(3, 182px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .Team {
+    gap: 16px;
+    grid: auto-flow / repeat(5, 182px);
+  }
 }
 
 .Team__Description {

@@ -599,9 +599,16 @@ button.Link {
 
 .Statistics {
   display: grid;
-  gap: 16px;
-  grid: auto-flow / repeat(4, 1fr);
+  gap: 24px;
+  grid: auto-flow / repeat(2, 1fr);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Statistics {
+    gap: 16px;
+    grid: auto-flow / repeat(4, 1fr);
+  }
 }
 
 .Statistics__Numbers {

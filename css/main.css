@@ -137,6 +137,11 @@ hr {
   }
 }
 
+.Section > .Section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .Section__Intro {
   color: #84775d;
   font-size: 12px;
@@ -405,7 +410,25 @@ button.Link {
 .Brands {
   display: grid;
   gap: 16px;
-  grid: auto-flow / repeat(4, 1fr);
+  grid: auto-flow / repeat(1, 1fr);
+}
+
+@media (min-width: 576px) {
+  .Brands {
+    grid: auto-flow / repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .Brands {
+    grid: auto-flow / repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .Brands {
+    grid: auto-flow / repeat(4, 1fr);
+  }
 }
 
 .Brands > .Panel {

@@ -421,7 +421,7 @@ button.Link {
   margin-top: 64px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Steps {
     gap: 16px;
     grid: auto-flow / repeat(3, 1fr);
@@ -433,6 +433,7 @@ button.Link {
   margin: auto;
   max-width: 320px;
   position: relative;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -473,12 +474,10 @@ button.Link {
   line-height: 48px;
   margin: 0;
   margin-bottom: 8px;
-  text-align: center;
 }
 
 .Step__Description {
   margin: 0;
-  text-align: center;
 }
 
 #HowTo {

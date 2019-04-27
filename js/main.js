@@ -1,13 +1,15 @@
+function updateHeaderState($header) {
+  if (this.scrollTop() > 24)
+    $header.not('.Header--Active').addClass('Header--Active');
+  else
+    $header.filter('.Header--Active').removeClass('Header--Active');
+}
+
 $(function () {
   const $window = $(window);
-  const $header = $('#Header');
+  const $header = $('#js-header');
+  const $calculator = $('#js-calculator');
 
-  $window.on('scroll', function () {
-    const scrollTop = $window.scrollTop();
-
-    if (scrollTop > 0)
-      $header.not('.Header--Active').addClass('Header--Active');
-    else
-      $header.filter('.Header--Active').removeClass('Header--Active');
-  });
+  $window.on('scroll', updateHeaderState.bind($window, $header));
+  updateHeaderState.call($window, $header);
 });

@@ -197,8 +197,9 @@ button.Link {
 }
 
 .Header {
+  margin-top: 24px;
   padding: 12px 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   transition: background-color ease-in-out .25s;
   width: 100%;
@@ -208,6 +209,8 @@ button.Link {
 
 .Header--Active {
   background-color: #ffffffe6;
+  margin-top: 0;
+  position: fixed;
 }
 
 .Header__Logo__Image {

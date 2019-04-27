@@ -130,9 +130,11 @@ hr {
   padding-top: 32px;
 }
 
-.Section--Large {
-  padding-bottom: 112px;
-  padding-top: 112px;
+@media (min-width: 992px) {
+  .Section--Large {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
 }
 
 .Section__Intro {
@@ -414,28 +416,43 @@ button.Link {
   align-items: center;
   counter-reset: step;
   display: grid;
-  gap: 16px;
-  grid: auto-flow / repeat(3, 1fr);
+  gap: 128px;
+  grid: auto-flow / repeat(1, 1fr);
   margin-top: 64px;
+}
+
+@media (min-width: 992px) {
+  .Steps {
+    gap: 16px;
+    grid: auto-flow / repeat(3, 1fr);
+  }
 }
 
 .Step {
   counter-increment: step;
+  margin: auto;
+  max-width: 320px;
   position: relative;
 }
 
-.Step + .Step::before {
-  border-color: transparent;
-  border-left-color: #c1b8a580;
-  border-style: solid;
-  border-width: 8px 0 8px 12px;
-  content: ' ';
-  display: block;
-  left: -8px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+@media (min-width: 992px) {
+  .Step {
+    max-width: auto;
+  }
+
+  .Step + .Step::before {
+    border-color: transparent;
+    border-left-color: #c1b8a580;
+    border-style: solid;
+    border-width: 8px 0 8px 12px;
+    content: ' ';
+    display: block;
+    left: -8px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
 
 .Step::after {

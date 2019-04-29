@@ -551,17 +551,20 @@ button.Link {
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
   .HowTo {
     flex-direction: row;
+    text-align: left;
   }
 }
 
 @media (min-width: 768px) {
   .HowTo {
     flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -569,7 +572,6 @@ button.Link {
   display: block;
   flex-basis: 72px;
   flex-shrink: 0;
-  /* margin: auto; */
   margin-bottom: 24px;
 }
 
@@ -589,13 +591,6 @@ button.Link {
 
 .HowTo__Description {
   margin: 0;
-  text-align: center;
-}
-
-@media (min-width: 576px) {
-  .HowTo__Description {
-    text-align: left;
-  }
 }
 
 #Articles {

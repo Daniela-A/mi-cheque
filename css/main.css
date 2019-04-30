@@ -123,6 +123,7 @@ hr {
 
 .Section--Dark {
   background-color: #292929;
+  color: white;
 }
 
 .Section--Small {
@@ -677,6 +678,43 @@ button.Link {
   color: #c1b8a5;
   margin: 0;
 }
+
+.Footer {
+  align-items: flex-start;
+  display: grid;
+  gap: 32px;
+  grid: auto-flow / repeat(2, 1fr);
+}
+
+.ContactUs {
+  display: grid;
+  gap: 16px 48px;
+  grid: auto-flow / repeat(2, auto);
+  margin: 0;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.ContactUs__Term {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #84775d;
+}
+
+.ContactUS__Description {
+  margin: 0;
+}
+
+.Copyright {
+  margin-top: 64px;
+}
+
+.Copyright > p {
+  margin: 0;
+}
+
+
 
  /* ==========================================================================
    Helper classes

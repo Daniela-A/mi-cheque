@@ -686,6 +686,10 @@ button.Link {
   grid: auto-flow / repeat(2, 1fr);
 }
 
+.Footer__Logo {
+  width: 72px;
+}
+
 .ContactUs {
   display: grid;
   gap: 16px 48px;
@@ -696,11 +700,18 @@ button.Link {
 }
 
 .ContactUs__Term {
+  align-items: center;
+  color: #84775d;
+  display: flex;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #84775d;
 }
+
+.ContactUs__Icon {
+  margin-right: 8px;
+}
+
 
 .ContactUS__Description {
   margin: 0;
@@ -713,7 +724,6 @@ button.Link {
 .Copyright > p {
   margin: 0;
 }
-
 
 
  /* ==========================================================================

@@ -719,10 +719,17 @@ button.Link {
 
 .Copyright {
   margin-top: 64px;
+  display: grid;
+  gap: 148px;
+  grid: auto-flow / repeat(2, 1fr);
 }
 
 .Copyright > p {
   margin: 0;
+}
+
+.TermsAndConditions {
+
 }
 
 

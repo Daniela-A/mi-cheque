@@ -363,7 +363,7 @@ button.Link {
   position: absolute;
   transform: translateY(50%);
   max-width: 980px;
-  width: 100%;
+  width: calc(100vw - 48px);
   z-index: 1;
 }
 

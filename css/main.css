@@ -218,7 +218,7 @@ button.Link {
 
 .Header {
   margin-top: 24px;
-  padding: 12px 0;
+  padding: 12px 24px;
   position: absolute;
   top: 0;
   transition: background-color ease-in-out .25s;
@@ -615,6 +615,7 @@ button.Link {
   display: grid;
   gap: 16px;
   grid: auto-flow / repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   margin-bottom: 48px;
 }
 
@@ -646,9 +647,10 @@ button.Link {
   margin-bottom: 24px;
 }
 
-.Help {
-  margin-top: -112px;
-  max-width: 400px;
+@media (min-width: 992px) {
+  .Help {
+    margin-top: -112px;
+  }
 }
 
 .Help__Title {
@@ -700,7 +702,13 @@ button.Link {
   align-items: flex-start;
   display: grid;
   gap: 32px;
-  grid: auto-flow / repeat(2, 1fr);
+  grid-template-columns: auto;
+}
+
+@media (min-width: 992px) {
+  .Footer {
+    grid-template-columns: auto 400px;
+  }
 }
 
 .Footer__Logo {
@@ -741,8 +749,15 @@ button.Link {
 .Copyright {
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   margin-top: 64px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .Copyright {
+    justify-content: space-between;
+  }
 }
 
 .Copyright > p {

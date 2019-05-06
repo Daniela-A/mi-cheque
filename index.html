@@ -61,10 +61,48 @@
           y recibí el dinero en menos de 6 horas*
         </h2>
 
+        <a class="Hero__Link" href="#">
+          <svg class="Hero__Link__Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="3" d="M13 6l-5 4-5-4"/>
+          </svg>
+          ¿Cómo funciona?
+        </a>
+
         <form id="js-calculator" class="Calculator Panel Panel--Large" action="index.html" method="post">
-          <h2 class="Calculator__Title">
-            Calcula cuanto podés obtener por tu cheque
-          </h2>
+          <span class="Calculator_Footnote">* Tiempo promedio de cobro estimado</span>
+
+          <div>
+            <h2 class="Calculator__Title">
+              Calcula cuanto podés obtener por tu cheque
+            </h2>
+            <fieldset>
+              <label class="Label" for="Monto">
+                Monto
+              </label>
+              <select name="" id="">
+                $UY
+              </select>
+              <input id="Monto" type="number" placeholder="Ingresá el monto">
+            </fieldset>
+            <fieldset>
+              <span class="Label">Vencimiento en</span>
+              <label for="">
+                <input type="radio" name="Vencimiento" value="30">
+                <span>30</span>
+                <span>días</span>
+              </label>
+              <label for="">
+                <input type="radio" name="Vencimiento" value="60">
+                <span>60</span>
+                <span>días</span>
+              </label>
+              <label for="">
+                <input type="radio" name="Vencimiento" value="90">
+                <span>90</span>
+                <span>días</span>
+              </label>
+            </fieldset>
+          </div>
           <div class="Panel__Footer">
             <button class="Link">
               Subir este cheque
@@ -510,9 +548,7 @@
                      img/img-isotipo@3x.png 3x">
         <hr>
         <div>
-          <p>
-          Seguinos en
-          </p>
+          <span>Seguinos en</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <g fill="none" fill-rule="evenodd">
              <rect width="32" height="32" fill="#A7C110" fill-rule="nonzero" rx="4"/>

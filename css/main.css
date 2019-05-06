@@ -287,7 +287,6 @@ button.Link {
   background-color: white;
   border-radius: 4px;
   color: #292929;
-  overflow: hidden;
   padding: 16px;
 }
 
@@ -296,6 +295,8 @@ button.Link {
 }
 
 .Panel--Large > .Panel__Footer {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   margin: -32px;
   margin-top: 32px;
   padding: 16px 32px;
@@ -356,6 +357,30 @@ button.Link {
   font-weight: 500;
   line-height: 32px;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.Hero__Link {
+  align-items: center;
+  color: #292929;
+  display: flex;
+  font-size: 16px;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.Hero__Link:hover {
+  color: #8b9f22;
+}
+
+.Hero__Link__Icon {
+  background-color: #a7c110;
+  box-shadow: 0 8px 8px 0 #4f591a4d;
+  border-radius: 50%;
+  height: 32px;
+  margin-right: 16px;
+  padding: 8px;
+  width: 32px;
 }
 
 .Calculator {
@@ -365,6 +390,16 @@ button.Link {
   max-width: 980px;
   width: calc(100vw - 48px);
   z-index: 1;
+}
+
+.Calculator_Footnote {
+  color: #84775d;
+  font-size: 12px;
+  font-weight: 500;
+  right: 0;
+  position: absolute;
+  top: -12px;
+  transform: translateY(-100%);
 }
 
 .Calculator__Title {
@@ -647,8 +682,13 @@ button.Link {
   margin-bottom: 24px;
 }
 
+.Help {
+  grid-row: 1;
+}
+
 @media (min-width: 992px) {
   .Help {
+    grid-row: auto;
     margin-top: -112px;
   }
 }
@@ -699,7 +739,6 @@ button.Link {
 }
 
 .Footer {
-  align-items: flex-start;
   display: grid;
   gap: 32px;
   grid-template-columns: auto;
@@ -715,16 +754,15 @@ button.Link {
   width: 72px;
 }
 
-.Footer > hr {
-  border-color: rgba(193, 184, 165, 0.2);
+.Footer hr {
+  border-color: #c1b8a532;
 }
 
 .ContactUs {
   display: grid;
   gap: 16px 48px;
   grid: auto-flow / repeat(2, auto);
-  margin: 0;
-  margin-right: auto;
+  margin: 32px auto 0 0;
   width: fit-content;
 }
 
@@ -754,7 +792,7 @@ button.Link {
   justify-content: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Copyright {
     justify-content: space-between;
   }

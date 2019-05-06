@@ -19,6 +19,13 @@
 </head>
 
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="linkedin-icon" viewBox="0 0 24 24">
+      <title>LinkedIn icon</title>
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </svg>
+  </svg>
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -44,7 +51,13 @@
             <a href="#" class="Link Header__Link">Preguntas frecuentes</a>
           </li>
           <li class="Header__Item">
-            <a href="#" class="Button">Ingresar</a>
+            <a href="#" class="Button Button--Icon">
+              <svg class="Button__Icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#FFF" fill-rule="nonzero" d="M10.025 10c2.774 0 5.153 1.895 5.866 4.5h10.623c1.981 0 1.981 3 0 3h-1.586v2.921c0 2.053-3.012 1.974-3.012 0V17.5H15.89c-.713 2.684-3.092 4.5-5.866 4.5C6.695 22 4 19.316 4 16s2.695-6 6.025-6zm0 3a3.005 3.005 0 0 0-3.013 3c0 1.658 1.348 3 3.013 3a3.005 3.005 0 0 0 3.012-3c0-1.658-1.347-3-3.012-3z"/>
+              </svg>
+
+              Ingresar
+            </a>
           </li>
         </ul>
       </nav>
@@ -83,29 +96,50 @@
                 $UY
               </select>
               <input id="Monto" type="number" placeholder="Ingresá el monto">
+              <span class="Error">Ingresá el monto del cheque.</span>
             </fieldset>
             <fieldset>
               <span class="Label">Vencimiento en</span>
-              <label for="">
-                <input type="radio" name="Vencimiento" value="30">
-                <span>30</span>
-                <span>días</span>
-              </label>
-              <label for="">
-                <input type="radio" name="Vencimiento" value="60">
-                <span>60</span>
-                <span>días</span>
-              </label>
-              <label for="">
-                <input type="radio" name="Vencimiento" value="90">
-                <span>90</span>
-                <span>días</span>
-              </label>
+              <div>
+                <label for="">
+                  <input type="radio" name="Vencimiento" value="30">
+                  <span>30</span>
+                  <span>días</span>
+                </label>
+                <label for="">
+                  <input type="radio" name="Vencimiento" value="60">
+                  <span>60</span>
+                  <span>días</span>
+                </label>
+                <label for="">
+                  <input type="radio" name="Vencimiento" value="90">
+                  <span>90</span>
+                  <span>días</span>
+                </label>
+              </div>
+              <span class="Error">Ingresá el monto del cheque.</span>
             </fieldset>
           </div>
           <div class="Panel__Footer">
+            <span class="Error">
+              <svg class="Error__Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#CC8478"/>
+                <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M8.444 8.444l6.831 6.831M15.556 8.444l-6.831 6.831"/>
+                </g>
+              </svg>
+
+              Verficá los datos de tu cheque.
+            </span>
+
             <button class="Link">
               Subir este cheque
+
+              <svg class="Link__Arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd" stroke="#A7C110" stroke-linecap="round" stroke-width="3">
+                  <path d="M12 6l6 6-6 6M18 12H6.039"/>
+                </g>
+              </svg>
             </button>
           </div>
         </form>
@@ -266,12 +300,40 @@
           </li>
         </ul>
 
-        <a href="#" class="Button Button--Centered">Empezar</a>
+        <a href="#" class="Button Button--Centered Button--Light">Empezar</a>
       </div>
     </section>
 
     <section class="Section Section--Dark">
       <div class="Container">
+        <div>
+          <h1>¿Necesitas ayuda o más informacíon?</h1>
+          <p>Llamános o solicitá que nosotros nos pongamos en contacto.</p>
+        </div>
+        <div>
+          <h2>Contactate con nosotros</h2>
+          <p>Llamanos al <a href="tel:+59891967828" class="Link Link--Small">(+598) 091 967 828</a></p>
+          <hr>
+          <h3>Solicita que te contactemos</h3>
+          <ul class="Unstyled">
+            <li>
+              <a href="" class="Link">
+                <svg class="Link__Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#A7C110" fill-rule="nonzero" stroke="#A7C110" d="M19.997 15.52l-2.454-1.927a2.657 2.657 0 0 0-1.636-.572c-.765 0-1.504.338-2.006.91-.316.365-.527.6-.633.73-.422-.053-1.399-.443-2.428-1.458-1.108-1.093-1.451-2.03-1.477-2.395.131-.104.369-.312.738-.624 1.082-.911 1.24-2.473.343-3.592l-1.952-2.42a2.653 2.653 0 0 0-2.059-.99c-.37 0-.712.078-1.055.208-.766.313-1.636.885-2.111 1.38-.766.755-1.795 2.472-.554 5.804.791 2.108 2.348 4.347 4.38 6.35 3.035 2.994 6.597 4.868 9.289 4.868 1.214 0 2.243-.39 2.982-1.093.501-.495 1.082-1.354 1.398-2.083a2.619 2.619 0 0 0-.765-3.097zm-.554 2.524c-.29.65-.765 1.327-1.082 1.666-.475.468-1.161.702-1.98.702-2.216 0-5.435-1.665-8.285-4.476C4.19 12.084 2.475 7.555 4.269 5.785c.317-.312 1.003-.78 1.69-1.067.158-.078.316-.104.474-.104.37 0 .713.156.95.442l1.953 2.42c.396.495.317 1.224-.158 1.64-.502.417-.845.73-.924.807-.739.73-.026 2.655 1.61 4.269 1.187 1.171 2.56 1.874 3.483 1.874.343 0 .634-.104.845-.287.079-.078.396-.416.818-.91a1.18 1.18 0 0 1 .923-.417c.264 0 .528.078.74.26l2.453 1.926c.396.339.555.911.317 1.406z"/>
+                </svg>
+                Por teléfono
+              </a>
+            </li>
+            <li>
+              <a href="" class="Link">
+                <svg class="Link__Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#A7C110" fill-rule="nonzero" stroke="#A7C110" stroke-width=".5" d="M22 12.255c0 5.112-4.176 9.256-9.327 9.256a9.343 9.343 0 0 1-4.509-1.152L3 22l1.684-4.966a9.158 9.158 0 0 1-1.339-4.779C3.345 7.144 7.521 3 12.673 3 17.825 3 22 7.144 22 12.255zm-9.327-7.781c-4.325 0-7.842 3.49-7.842 7.781a7.7 7.7 0 0 0 1.494 4.562l-.98 2.89 3.013-.957a7.837 7.837 0 0 0 4.315 1.287c4.324 0 7.842-3.49 7.842-7.781 0-4.29-3.518-7.782-7.842-7.782zm4.71 9.913c-.058-.094-.21-.151-.438-.265-.23-.113-1.354-.662-1.563-.738-.21-.075-.362-.113-.514.114-.153.227-.59.738-.725.889-.133.152-.266.17-.495.057-.228-.113-.965-.353-1.838-1.126-.68-.601-1.139-1.343-1.272-1.57-.133-.228-.014-.35.1-.463.103-.102.229-.265.343-.397.115-.133.153-.227.228-.379.077-.151.039-.284-.019-.398-.057-.113-.514-1.23-.705-1.684-.19-.453-.38-.378-.514-.378-.133 0-.286-.019-.438-.019-.153 0-.4.057-.61.284-.21.227-.8.776-.8 1.892 0 1.116.819 2.195.934 2.346.114.151 1.58 2.517 3.905 3.425 2.325.908 2.325.605 2.744.567.419-.038 1.352-.549 1.544-1.078.19-.53.19-.985.133-1.08z"/>
+                </svg>
+                Por Whatsapp
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -288,6 +350,11 @@
           <li class="Panel TeamMember">
             <div class="TeamMember__Image">
               <img src="img/photo.png" alt="Gonzalo Mesorio">
+              <a class="TeamMember__LinkedIn" href="#">
+                <svg class="TeamMember__LinkedIn__Icon">
+                  <use xlink:href="#linkedin-icon" />
+                </svg>
+              </a>
             </div>
             <h2 class="TeamMember__Name">
               Gonzalo Mesorio
@@ -310,6 +377,11 @@
           <li class="Panel TeamMember">
             <div class="TeamMember__Image">
               <img src="img/photo.png" alt="Milton Rodríguez">
+              <a class="TeamMember__LinkedIn" href="#">
+                <svg class="TeamMember__LinkedIn__Icon">
+                  <use xlink:href="#linkedin-icon" />
+                </svg>
+              </a>
             </div>
             <h2 class="TeamMember__Name">
               Milton Rodríguez
@@ -332,6 +404,11 @@
           <li class="Panel TeamMember">
             <div class="TeamMember__Image">
               <img src="img/photo.png" alt="Mónica Mesorio">
+              <a class="TeamMember__LinkedIn" href="#">
+                <svg class="TeamMember__LinkedIn__Icon">
+                  <use xlink:href="#linkedin-icon" />
+                </svg>
+              </a>
             </div>
             <h2 class="TeamMember__Name">
               Mónica Mesorio
@@ -354,6 +431,11 @@
           <li class="Panel TeamMember">
             <div class="TeamMember__Image">
               <img src="img/photo.png" alt="Sebastían Pereira">
+              <a class="TeamMember__LinkedIn" href="#">
+                <svg class="TeamMember__LinkedIn__Icon">
+                  <use xlink:href="#linkedin-icon" />
+                </svg>
+              </a>
             </div>
             <h2 class="TeamMember__Name">
               Sebastían Pereira
@@ -376,6 +458,11 @@
           <li class="Panel TeamMember">
             <div class="TeamMember__Image">
               <img src="img/photo.png" alt="Felipe Mesorio">
+              <a class="TeamMember__LinkedIn" href="#">
+                <svg class="TeamMember__LinkedIn__Icon">
+                  <use xlink:href="#linkedin-icon" />
+                </svg>
+              </a>
             </div>
             <h2 class="TeamMember__Name">
               Felipe Mesorio
@@ -534,7 +621,7 @@
             <a class="Link" href="#">Seguir leyendo</a>
           </article>
         </div>
-        <a href="#" class="Button Button--Centered">Leer más</a>
+        <a href="#" class="Button Button--Centered Button--Light">Leer más</a>
       </div>
     </section>
   </main>

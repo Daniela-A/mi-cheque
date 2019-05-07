@@ -223,6 +223,7 @@ button.Link {
 }
 
 .Header {
+  display: none;
   margin-top: 24px;
   padding: 12px 24px;
   position: absolute;
@@ -798,9 +799,14 @@ button.Link {
 .Articles {
   display: grid;
   gap: 16px;
-  grid: auto-flow / repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid: auto-flow / repeat(1, 1fr);
   margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .Articles {
+    grid: auto-flow / repeat(2, 1fr);
+  }
 }
 
 .Article {
@@ -907,12 +913,33 @@ button.Link {
   border-color: #c1b8a532;
 }
 
+.Footer__Social {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  max-width: 240px;
+}
+
+.Footer__Social__Label {
+  flex: 1;
+}
+
+.Footer__Social > .Link {
+  margin-left: 24px;
+}
+
 .ContactUs {
   display: grid;
   gap: 16px 48px;
-  grid: auto-flow / repeat(2, auto);
-  margin: 32px auto 0 0;
-  width: fit-content;
+  grid: auto-flow / repeat(1, auto);
+  margin: 0;
+}
+
+@media (min-width: 570px) {
+  .ContactUs {
+    grid: auto-flow / repeat(2, auto);
+    width: fit-content;
+  }
 }
 
 .ContactUs__Term {

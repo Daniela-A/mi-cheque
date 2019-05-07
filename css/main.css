@@ -639,6 +639,8 @@ button.Link {
 
 @media (min-width: 768px) {
   .MidHelp__Section:last-child {
+    width: 360px;
+    padding-right: 0;
     text-align: left;
   }
 }

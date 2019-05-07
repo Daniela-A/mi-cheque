@@ -106,6 +106,7 @@ body {
   font-family: GTWalsheimPro, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  overflow-x: hidden;
 
   /* For rendering purposes */
   -webkit-font-smoothing: antialiased;
@@ -213,7 +214,9 @@ button.Link {
 }
 
 .Link__Arrow {
+  height: 24px;
   margin-left: 8px;
+  width: 24px;
 }
 
 .Link__Icon--Small {
@@ -223,7 +226,7 @@ button.Link {
 }
 
 .Header {
-  display: none;
+  /* display: none; */
   margin-top: 24px;
   padding: 12px 24px;
   position: absolute;
@@ -379,20 +382,39 @@ button.Link {
   font-weight: 500;
 }
 
-#Hero {
+.Hero {
   background-image: url(../img/andrew-neel-218073-unsplash@2x.jpg);
   background-size: cover;
-  min-height: 640px;
-  padding-top: 192px;
+  padding-top: 96px;
+}
+
+@media (max-width: 767px) {
+  .Hero {
+    padding-bottom: 112px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Hero {
+    min-height: 640px;
+    padding-top: 192px;
+  }
 }
 
 .Hero__Title {
-  font-size: 64px;
+  font-size: 44px;
   font-weight: 900;
-  line-height: 72px;
+  line-height: 48px;
   margin: 0;
   margin-bottom: 8px;
   max-width: 640px;
+}
+
+@media (min-width: 768px) {
+  .Hero__Title {
+    font-size: 64px;
+    line-height: 72px;
+  }
 }
 
 .Hero__Subtitle {
@@ -427,23 +449,104 @@ button.Link {
   width: 32px;
 }
 
+.Label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
 .Calculator {
-  bottom: 0;
-  position: absolute;
-  transform: translateY(50%);
-  max-width: 980px;
-  width: calc(100vw - 48px);
-  z-index: 1;
+  position: relative;
+}
+
+.Calculator__Section {
+  margin-top: -64px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  .Calculator__Section {
+    margin-top: -120px;
+  }
 }
 
 .Calculator_Footnote {
   color: #84775d;
   font-size: 12px;
   font-weight: 500;
-  right: 0;
+  right: 24px;
   position: absolute;
   top: -12px;
   transform: translateY(-100%);
+}
+
+@media (min-width: 992px) {
+  .Calculator_Footnote {
+    right: 0;
+  }
+}
+
+.Calculator__Main {
+  align-items: center;
+  display: grid;
+  gap: 16px;
+  grid: auto-flow / repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .Calculator__Main {
+    grid: auto-flow / repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .Calculator__Main {
+    grid: auto-flow / repeat(3, 1fr);
+  }
+}
+
+.Calculator__Footer {
+  align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .Calculator > .Calculator__Footer {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Calculator__Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.Calculator__Footer > p {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .Calculator__Footer > p {
+    width: auto;
+  }
+}
+
+.Calculator__Footer > p > strong {
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 8px;
 }
 
 .Calculator__Title {

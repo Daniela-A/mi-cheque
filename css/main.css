@@ -449,6 +449,76 @@ button.Link {
   margin-right: 8px;
 }
 
+.MidHelp {
+  background-color: #292929;
+  box-shadow: 0 24px 72px 0 #29292928;
+  color: #b99d64;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.MidHelp::before,
+.MidHelp::after {
+  bottom: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  z-index: 1;
+}
+
+.MidHelp::before {
+  background-color: #292929;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.MidHelp::after {
+  background-color: #3f3f3f;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.MidHelp hr {
+  border-color: #c1b8a57f;
+}
+
+.MidHelp p {
+  margin: 0;
+}
+
+.MidHelp__Section {
+  padding: 40px;
+  width: 400px;
+  z-index: 2;
+}
+
+.MidHelp__Section:first-child {
+  background-color: #292929;
+  text-align: right;
+}
+
+.MidHelp__Section:last-child {
+  background-color: #3f3f3f;
+}
+
+.MidHelp__Title {
+  color: white;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+}
+
+.MidHelp__Title--Small {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
 .Team {
   display: grid;
   gap: 32px;

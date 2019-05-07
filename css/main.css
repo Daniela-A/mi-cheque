@@ -459,12 +459,47 @@ button.Link {
   font-weight: 500;
 }
 
+.Monto {
+}
+
+.Monto__Input {
+  background: none;
+  border: none;
+  border-left: 1px solid #c1b8a57f;
+  color: #292929;
+  font-size: 32px;
+  line-height: 1;
+  margin-left: 16px;
+  padding: 0;
+  padding-left: 16px;
+  width: 100%;
+}
+
+.Monto__Input::placeholder {
+  color: #c1b8a5;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.Monto__Input:focus {
+  outline: none;
+}
+
+.Monto__Input__Container {
+  align-items: center;
+  background-color: #faf8f5;
+  display: flex;
+  max-width: 360px;
+  padding: 12px 16px;
+}
+
 .Picker {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 }
 
 .Picker__Item {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   text-align: center;

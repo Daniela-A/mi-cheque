@@ -107,15 +107,17 @@
           <h2 class="Calculator__Title">
             Calcula cuanto podés obtener por tu cheque
           </h2>
-          <fieldset>
+          <fieldset class="Monto">
             <label class="Label" for="Monto">
               Monto
             </label>
-            <select name="" id="">
-              <option value="">$UY</option>
-              <option value="">US$</option>
-            </select>
-            <input id="Monto" type="number" placeholder="Ingresá el monto">
+            <div class="Monto__Input__Container">
+              <select name="" id="">
+                <option value="">$UY</option>
+                <option value="">US$</option>
+              </select>
+              <input id="Monto" class="Monto__Input" type="number" placeholder="Ingresá el monto">
+            </div>
             <span class="Error mt-8">Ingresá el monto del cheque.</span>
           </fieldset>
           <fieldset>

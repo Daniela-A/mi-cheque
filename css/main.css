@@ -321,13 +321,27 @@ button.Link {
 }
 
 .Panel--Large {
-  padding: 32px;
+  padding: 24px;
+}
+
+@media (min-width: 570px) {
+  .Panel--Large {
+    padding: 32px;
+  }
 }
 
 .Panel--Large > .Panel__Footer {
-  margin: -32px;
-  margin-top: 32px;
-  padding: 16px 32px;
+  margin: -24px;
+  margin-top: 24px;
+  padding: 16px 24px;
+}
+
+@media (min-width: 570px) {
+  .Panel--Large > .Panel__Footer {
+    margin: -32px;
+    margin-top: 32px;
+    padding: 16px 32px;
+  }
 }
 
 .Panel--Dark {

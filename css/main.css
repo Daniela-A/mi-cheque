@@ -217,7 +217,9 @@ button.Link {
 }
 
 .Link__Icon--Small {
+  height: 16px;
   margin-right: 4px;
+  width: 16px;
 }
 
 .Header {
@@ -228,7 +230,7 @@ button.Link {
   transition: background-color ease-in-out .25s;
   width: 100%;
   will-change: background-color;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 992px) {
@@ -453,32 +455,37 @@ button.Link {
   background-color: #292929;
   box-shadow: 0 24px 72px 0 #29292928;
   color: #b99d64;
-  flex-direction: row;
   justify-content: flex-end;
   position: relative;
 }
 
-.MidHelp::before,
-.MidHelp::after {
-  bottom: 0;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50vw;
-  z-index: 1;
-}
+@media (min-width: 768px) {
+  .MidHelp {
+    flex-direction: row;
+  }
 
-.MidHelp::before {
-  background-color: #292929;
-  left: 0;
-  transform: translateX(-100%);
-}
+  .MidHelp::before,
+  .MidHelp::after {
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    z-index: 1;
+  }
 
-.MidHelp::after {
-  background-color: #3f3f3f;
-  right: 0;
-  transform: translateX(100%);
+  .MidHelp::before {
+    background-color: #292929;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  .MidHelp::after {
+    background-color: #3f3f3f;
+    right: 0;
+    transform: translateX(100%);
+  }
 }
 
 .MidHelp hr {
@@ -490,18 +497,32 @@ button.Link {
 }
 
 .MidHelp__Section {
-  padding: 40px;
-  width: 400px;
+  padding: 32px 24px;
+  text-align: center;
   z-index: 2;
 }
 
-.MidHelp__Section:first-child {
-  background-color: #292929;
-  text-align: right;
+@media (min-width: 768px) {
+  .MidHelp__Section {
+    padding: 40px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .MidHelp__Section:first-child {
+    text-align: right;
+  }
 }
 
 .MidHelp__Section:last-child {
   background-color: #3f3f3f;
+}
+
+@media (min-width: 768px) {
+  .MidHelp__Section:last-child {
+    text-align: left;
+  }
 }
 
 .MidHelp__Title {
